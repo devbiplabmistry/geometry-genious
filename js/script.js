@@ -74,10 +74,6 @@ document.getElementById('btn-ellip').addEventListener('click',function(){
     const ellipB=inputFieldValue('ellip-b');
     const ellipArea='6.'+'Ellipse   '+parseFloat((3.14*ellipA*ellipB).toFixed(2)) ;
     setTextElement('ellipArea',ellipArea);
-    const meter=document.getElementById('btn-6');
-    meter.style.display='block';
-
-    const sq=document.getElementById('sq6');
-    sq.style.display='block'
-
+    display('btn-6','block');
+    display('sq6','block');
 })
