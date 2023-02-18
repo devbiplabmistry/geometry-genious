@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,51 +8,61 @@
     <title>Blog Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-<div class="container pl-8">
-    <h1 class="font-bold text-center mt-8 mb-10 font-bold">Welcome to my blog</h1>
-    <p class="mb-4 font-bold">Question-1 : What is DOM and what is purpose of DOM ?</p>
-    <p>The full form of DOM is document object model, we show complete html through javascript 
-     in way of object. its main purpose is to
-     defines the logical structure of documents and the way a document is accessed and manipulated.
-    
-     The DOM is not part of the JavaScript language, but is instead a Web API used to build websites. JavaScript can also be used in other contexts.
-     <br>
-     The DOM was designed to be independent of any particular programming language, making the structural representation of the document available from a single, consistent API
-    </p>
+    <div class="container pl-8">
+        <h1 class="font-bold text-center mt-8 mb-10 font-bold">Welcome to my blog</h1>
+        <p class="mb-4 font-bold">Question-1 : What is DOM and what is purpose of DOM ?</p>
+        <p>The full form of DOM is document object model, we show complete html through javascript
+            in way of object. its main purpose is to
+            defines the logical structure of documents and the way a document is accessed and manipulated.
 
-    <br>
-    <br>
-    <br>
-    <p class="mb-4 font-bold">Question-1 : How you select element from DOM ?</p>
-    <p>We select  five using selectors to select element from Dom.
-      <h4 class="mt-2"> a. getElementsByTagName()</h4>
-      <h4 class="mt-2 mb-2"> b. getElementsByClassName()</h4>
-       <h4>c.getElementById()</h4>
-      <h4 class="mt-2 mb-2"> d.querySelector()</h4>
-      <h4 class="mb-2"> e. querySelectorAll()</h4>
-       <p>Note: if we use querySelectorAll then we get all elements , but if we use only querySelector then we get only first element.</p>
-    </p>
-
-
-
-    <p class="mb-4 mt-4 font-bold">Question-3 : What is Event bubble ?</p>
-    <p>Event bubbling is a method of event propagation in the HTML DOM API  inside another element, and both elements have registered a handle to one event. 
-
-        it first starts with the element that we triggered by the event and then check to the containing element to the upper level  i.e the event is first captured and handled by the innermost element and then propagated to outer elements.
+            The DOM is not part of the JavaScript language, but is instead a Web API used to build websites. JavaScript
+            can also be used in other contexts.
+            <br>
+            The DOM was designed to be independent of any particular programming language, making the structural
+            representation of the document available from a single, consistent API
+        </p>
 
         <br>
         <br>
+        <br>
+        <p class="mb-4 font-bold">Question-1 : How you select element from DOM ?</p>
+        <p>We select five using selectors to select element from Dom.
+            <h4 class="mt-2"> a. getElementsByTagName()</h4>
+            <h4 class="mt-2 mb-2"> b. getElementsByClassName()</h4>
+            <h4>c.getElementById()</h4>
+            <h4 class="mt-2 mb-2"> d.querySelector()</h4>
+            <h4 class="mb-2"> e. querySelectorAll()</h4>
+            <p>Note: if we use querySelectorAll then we get all elements , but if we use only querySelector then we get
+                only first element.</p>
+        </p>
 
-        we also can handle this bubble propagation easily by using event.stopPropagation();
-        if we stop immediate propagation then we use event.stopImmediatePropagation.
-        
-       
-    </p>
 
 
+        <p class="mb-4 mt-4 font-bold">Question-3 : What is Event bubble ?</p>
+        <p>Event bubbling is a method of event propagation in the HTML DOM API inside another element, and both elements
+            have registered a handle to one event.
+            <br>
+            <br>
+            it first starts with the element that we triggered by the event and then check to the containing element to
+            the upper level i.e the event is first captured and handled by the innermost element and then propagated to
+            outer elements.
+            <br>
+            <br>
+            we also can handle this bubble propagation easily by using event.stopPropagation();
+            if we stop immediate propagation then we use event.stopImmediatePropagation.
+        </p>
 
-</div>
-    
+        <p class="mb-4 mt-4 font-bold">Question-1 : What is call back function ,purpose of callback function ?</p>
+        <p>
+            call back function is function which is used as an argument into another function,we use it for doing some
+            kinds of action inside the outer function.
+            A callback's purpose is to execute code in response to an event.the response can be any types.
+            <br>
+            <br>
+            we mainly use call back function to continue code execution after an asynchronous operation has completed.
+    </div>
 </body>
+
 </html>
