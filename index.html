@@ -35,12 +35,12 @@
             <div class="item-content text-center mt-10">
                 <h4 class="font-bold">Triangle</h4>
                 <h5 class="pb-5">Area (A) = 0.5 x b x h</h5>
-                <input type="text" placeholder="b" class="w-20 bg-gray-100 pl-2">
+                <input id="triangle-b" type="text" placeholder="b" class="w-20 bg-gray-100 pl-2">
                 <span>cm</span>
-                <input type="text" placeholder="h" class="w-20 bg-gray-100 pl-2">
+                <input id="triangle-h" type="text" placeholder="h" class="w-20 bg-gray-100 pl-2">
                 <span>cm</span>
             </div>
-            <button class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
+            <button id="btn-triangle" class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
         </div>
 
         <div class="item  py-12 px-10 border-2 text-center">
@@ -50,12 +50,12 @@
             <div class="item-content text-center mt-10">
                 <h4 class="font-bold">Rectangle</h4>
                 <h5 class="pb-5">Area (A) = w  x l </h5>
-                <input type="text" placeholder="w" class="w-20 bg-gray-100 pl-2">
+                <input id="rectangle-w" type="text" placeholder="w" class="w-20 bg-gray-100 pl-2">
                 <span>cm</span>
-                <input type="text" placeholder="l" class="w-20 bg-gray-100 pl-2">
+                <input id="rectangle-l" type="text" placeholder="l" class="w-20 bg-gray-100 pl-2">
                 <span>cm</span>
             </div>
-            <button class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
+            <button id="btn-rectangle" class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
         </div>
 
         <div class="item  py-12 px-10 border-2 text-center">
@@ -65,12 +65,12 @@
             <div class="item-content text-center mt-10">
                 <h4 class="font-bold">Parallelogram</h4>
                 <h5 class="pb-5">Area (A) =  b x h</h5>
-                <input type="text" placeholder="b" class="w-20 bg-gray-100 pl-2">
+                <input id="parallelogram-b" type="text" placeholder="b" class="w-20 bg-gray-100 pl-2">
                 <span>cm</span>
-                <input type="text" placeholder="h" class="w-20 bg-gray-100 pl-2">
+                <input id="parallelogram-h" type="text" placeholder="h" class="w-20 bg-gray-100 pl-2">
                 <span>cm</span>
             </div>
-            <button class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
+            <button id="btn-parallelogram" class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
         </div>
         
         <div class="item  py-12 px-10 border-2 text-center">
@@ -80,12 +80,12 @@
             <div class="item-content text-center mt-10">
                 <h4 class="font-bold">Rhombus</h4>
                 <h5 class="pb-5">Area (A) = 0.5 x d1 x d2 </h5>
-                <input type="text" placeholder="d1" class="w-20 bg-gray-100 pl-2">
+                <input id="rhom-d1" type="text" placeholder="d1" class="w-20 bg-gray-100 pl-2">
                 <span>cm</span>
-                <input type="text" placeholder="d2" class="w-20 bg-gray-100 pl-2">
+                <input id="rhom-d2" type="text" placeholder="d2" class="w-20 bg-gray-100 pl-2">
                 <span>cm</span>
             </div>
-            <button class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
+            <button id="btn-rhom" class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
         </div>
         <div class="item  py-12 px-10 border-2 text-center">
             <div class="item-image mx-auto">
@@ -94,12 +94,12 @@
             <div class="item-content text-center mt-10">
                 <h4 class="font-bold">Pentagon</h4>
                 <h5 class="pb-5">Area (A) = 0.5 x p x b </h5>
-                <input type="text" placeholder="p" class="w-20 bg-gray-100 pl-2">
+                <input id="penta-p" type="text" placeholder="p" class="w-20 bg-gray-100 pl-2">
                 <span>cm</span>
-                <input type="text" placeholder="b" class="w-20 bg-gray-100 pl-2">
+                <input id="penta-b" type="text" placeholder="b" class="w-20 bg-gray-100 pl-2">
                 <span>cm</span>
             </div>
-            <button class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
+            <button id="btn-penta" class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
         </div>
         <div class="item  py-12 px-10 border-2 text-center">
             <div class="item-image mx-auto">
@@ -108,21 +108,47 @@
             <div class="item-content text-center mt-10">
                 <h4 class="font-bold">Ellipse</h4>
                 <h5 class="pb-5">Area (A) = 3.14 x a x b</h5>
-                <input type="text" placeholder="a" class="w-20 bg-gray-100 pl-2">
+                <input id="ellip-a" type="text" placeholder="a" class="w-20 bg-gray-100 pl-2">
                 <span>cm</span>
-                <input type="text" placeholder="b" class="w-20 bg-gray-100 pl-2">
+                <input id="ellip-b" type="text" placeholder="b" class="w-20 bg-gray-100 pl-2">
                 <span>cm</span>
             </div>
-            <button class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
+            <button id="btn-ellip" class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
         </div>
     </div>
   </div>
 
 
-  <div class="right-item mt-12 ml-4 w-1/4">
-    <div class="item pt-7   pb-80  border-2 text-center ">
-          <p class="font-bold underline-offset-8">Area calculation</p>
+  <div class="right-item mt-12 ml-4 w-1/3 relative">
+    <div class="item pt-7   pb-80  border-2 pl-2 ">
+          <p class="font-bold underline-offset-8 mb-2">Area calculation</p>
 
+          <h4 class=" mb-4 absolute top-[58px]" id="triangleArea1"></h4> 
+        <span id="sq" class="hidden  absolute top-[58px] right-[140px]">cm <sup>2</sup></span>
+           <button id="btn1" class=" hidden cursor-pointer py-[4px] px-[10px] bg-cyan-500 rounded-lg  absolute top-[58px] right-[8px]">convert to m<sup>2</sup></button>
+
+
+          <h4 class="mb-4 absolute top-[100px]" id="rectangleArea"></h4>
+          <span id="sq2" class="hidden  absolute top-[100px] right-[140px]">cm <sup>2</sup></span>
+          <button id="btn2" class="hidden cursor-pointer py-[4px] px-[10px] bg-cyan-500 rounded-lg  absolute top-[100px] right-[8px]">convert to m<sup>2</sup></button>
+
+
+          <h4  class="mb-4 absolute top-[145px] " id="parallelogramArea"></h4>
+          <span id="sq3" class="hidden  absolute top-[145px] right-[140px]">cm <sup>2</sup></span>
+          <button id="btn-3"  class="hidden cursor-pointer py-[4px] px-[10px] bg-cyan-500 rounded-lg  absolute top-[145px] right-[8px]">convert m<sup>2</sup></button>
+
+
+          <h4 class="mb-8  absolute top-[185px]" id="rhombusArea"></h4>
+          <span id="sq4" class="hidden  absolute top-[185px] right-[140px]">cm <sup>2</sup></span>
+          <button id="btn-4" class="hidden cursor-pointer py-[4px] px-[10px] bg-cyan-500 rounded-lg  absolute top-[185px] right-[8px]">convert to m<sup>2</sup></button>
+
+          <h4 class="mb-4   absolute top-[230px]" id="pentaArea"></h4>
+          <span id="sq5" class="hidden  absolute top-[230px] right-[140px]">cm <sup>2</sup></span>
+          <button id="btn-5" class="hidden cursor-pointer py-[4px] px-[10px] bg-cyan-500 rounded-lg  absolute top-[230px] right-[8px]">convert to m<sup>2</sup></button>
+          
+          <h4  class="mb-4  absolute top-[275px]"id="ellipArea"></h4>
+          <span id="sq6" class="hidden  absolute top-[275px] right-[140px]">cm <sup>2</sup></span>
+          <button id="btn-6"  class=" hidden  cursor-pointer py-[4px] px-[10px] bg-cyan-500 rounded-lg  absolute top-[275px] right-[8px]">convert to m<sup>2</sup></button>
     </div>
 
   </div>
