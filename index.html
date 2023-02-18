@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry-Genious</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="container mx-auto">
+        <!-- Header part start Here -->
+        <header>
+            <div class="title py-5 px-10 bg-green-100 mt-10 flex justify-between">
+                <div>
+                    <h3 class="font-bold text-3xl">Interactive</h3>
+                    <p class="font-medium text-3xl">Geometry Genius</p>
+                </div>
+                <div>
+                    <button class="py-2.5 px-10 bg-cyan-400 rounded-lg text-white">Blog</button>
+                </div>
+            </div>
+        </header>
+<!-- Header part End here -->
+<!-- main part start Here -->
+<div class=" flex justify-between">
+  <div class="left-item">
+    <div class="item-wrapper grid grid-cols-3 mt-12 gap-4">
+        <div class="item  py-12 px-10 border-2 text-center">
+            <div class="item-image mx-auto">
+                <img  src="images/triangle.png" alt="triangle">
+            </div>
+            <div class="item-content text-center mt-10">
+                <h4 class="font-bold">Triangle</h4>
+                <h5 class="pb-5">Area (A) = 0.5 x b x h</h5>
+                <input type="text" placeholder="b" class="w-20 bg-gray-100 pl-2">
+                <span>cm</span>
+                <input type="text" placeholder="h" class="w-20 bg-gray-100 pl-2">
+                <span>cm</span>
+            </div>
+            <button class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
+        </div>
+
+        <div class="item  py-12 px-10 border-2 text-center">
+            <div class="item-image mx-auto">
+                <img  src="images/rectangle.png" alt="rectangle">
+            </div>
+            <div class="item-content text-center mt-10">
+                <h4 class="font-bold">Rectangle</h4>
+                <h5 class="pb-5">Area (A) = w  x l </h5>
+                <input type="text" placeholder="w" class="w-20 bg-gray-100 pl-2">
+                <span>cm</span>
+                <input type="text" placeholder="l" class="w-20 bg-gray-100 pl-2">
+                <span>cm</span>
+            </div>
+            <button class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
+        </div>
+
+        <div class="item  py-12 px-10 border-2 text-center">
+            <div class="item-image mx-auto">
+                <img  src="images/parallelogram.png" alt="parallelogram">
+            </div>
+            <div class="item-content text-center mt-10">
+                <h4 class="font-bold">Parallelogram</h4>
+                <h5 class="pb-5">Area (A) =  b x h</h5>
+                <input type="text" placeholder="b" class="w-20 bg-gray-100 pl-2">
+                <span>cm</span>
+                <input type="text" placeholder="h" class="w-20 bg-gray-100 pl-2">
+                <span>cm</span>
+            </div>
+            <button class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
+        </div>
+        
+        <div class="item  py-12 px-10 border-2 text-center">
+            <div class="item-image mx-auto">
+                <img  src="images/rhombus.png" alt="rhombus">
+            </div>
+            <div class="item-content text-center mt-10">
+                <h4 class="font-bold">Rhombus</h4>
+                <h5 class="pb-5">Area (A) = 0.5 x d1 x d2 </h5>
+                <input type="text" placeholder="d1" class="w-20 bg-gray-100 pl-2">
+                <span>cm</span>
+                <input type="text" placeholder="d2" class="w-20 bg-gray-100 pl-2">
+                <span>cm</span>
+            </div>
+            <button class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
+        </div>
+        <div class="item  py-12 px-10 border-2 text-center">
+            <div class="item-image mx-auto">
+                <img  src="images/pentagon.png" alt="pentagon">
+            </div>
+            <div class="item-content text-center mt-10">
+                <h4 class="font-bold">Pentagon</h4>
+                <h5 class="pb-5">Area (A) = 0.5 x p x b </h5>
+                <input type="text" placeholder="p" class="w-20 bg-gray-100 pl-2">
+                <span>cm</span>
+                <input type="text" placeholder="b" class="w-20 bg-gray-100 pl-2">
+                <span>cm</span>
+            </div>
+            <button class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
+        </div>
+        <div class="item  py-12 px-10 border-2 text-center">
+            <div class="item-image mx-auto">
+                <img  src="images/ellipse.png" alt="ellipse">
+            </div>
+            <div class="item-content text-center mt-10">
+                <h4 class="font-bold">Ellipse</h4>
+                <h5 class="pb-5">Area (A) = 3.14 x a x b</h5>
+                <input type="text" placeholder="a" class="w-20 bg-gray-100 pl-2">
+                <span>cm</span>
+                <input type="text" placeholder="b" class="w-20 bg-gray-100 pl-2">
+                <span>cm</span>
+            </div>
+            <button class="pl-20 pr-20 py-2 bg-cyan-500 text-white mt-10  rounded-lg">Calculate</button>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="right-item mt-12 ml-4 w-1/4">
+    <div class="item pt-7   pb-80  border-2 text-center ">
+          <p class="font-bold underline-offset-8">Area calculation</p>
+
+    </div>
+
+  </div>
+</div>
+</div>
+
+
+
+<!-- main part End Here -->
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
