@@ -103,3 +103,7 @@ document.getElementById('btn-ellip').addEventListener('click',function(){
     display('btn-6','block');
     display('sq6','block');
 })
+
+document.getElementById('blog').addEventListener('click',function(){
+    window.location.href='blog.html';
+})
