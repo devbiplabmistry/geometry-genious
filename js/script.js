@@ -54,12 +54,9 @@ document.getElementById('btn-rhom').addEventListener('click',function(){
     const rhomd2=inputFieldValue('rhom-d2');
     const rhomArea='4.'+'Rhombus   '+parseFloat((0.5*rhomd1*rhomd2).toFixed(2));
     setTextElement('rhombusArea',rhomArea);
-    const meter=document.getElementById('btn-4');
-    meter.style.display='block';
-
-    const sq=document.getElementById('sq4');
-    sq.style.display='block'
-
+    display('btn-4','block');
+    display('sq4','block');
+   
 })
 // Pentagon Area
 document.getElementById('btn-penta').addEventListener('click',function(){
