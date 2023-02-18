@@ -2,6 +2,7 @@
 function inputFieldValue(elementId){
     const inputField=document.getElementById(elementId);
     const inputFieldString=inputField.value;
+
     const inputFieldNumber=parseFloat(inputFieldString);
     inputField.value='';
     return inputFieldNumber;
@@ -24,6 +25,11 @@ document.getElementById('btn-triangle').addEventListener('click',function(){
     const triangleB=inputFieldValue('triangle-b');
     const triangleH=inputFieldValue('triangle-h');
     const triangleArea='1. '+' Triangle '+parseFloat((0.5*triangleB*triangleH).toFixed(2));
+
+    if(triangleB <=0 || triangleH <=0 ||isNaN(triangleB) || isNaN (triangleH)){
+        alert('please enter a valid input')
+        return;
+    } 
     setTextElement('triangleArea1',triangleArea);
     display('btn1','block');
     display('sq','block');
@@ -34,6 +40,10 @@ document.getElementById('btn-rectangle').addEventListener('click',function(){
     const rectangleW=inputFieldValue('rectangle-w');
     const rectangleL=inputFieldValue('rectangle-l');
     const rectangleArea='2.'+  'Rectangle '+parseFloat((rectangleW*rectangleL).toFixed(2));
+    if(rectangleW <=0 || rectangleL <=0 ||isNaN(rectangleW) || isNaN (rectangleL)){
+        alert('please enter a valid input')
+        return;
+    } 
     setTextElement('rectangleArea',rectangleArea);
    display('btn2','block');
    display('sq2','block');
