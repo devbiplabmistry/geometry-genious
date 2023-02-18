@@ -64,12 +64,9 @@ document.getElementById('btn-penta').addEventListener('click',function(){
     const pentaB=inputFieldValue('penta-b');
     const pentaArea='5.'+'Pentagon   '+parseFloat((0.5*pentaP*pentaB).toFixed(2));
     setTextElement('pentaArea',pentaArea);
-    const meter=document.getElementById('btn-5');
-    meter.style.display='block';
-
-    const sq=document.getElementById('sq5');
-    sq.style.display='block'
-
+    display('btn-5','block');
+    display('sq5','block');
+   
 })
 // Ellipse Area
 document.getElementById('btn-ellip').addEventListener('click',function(){
