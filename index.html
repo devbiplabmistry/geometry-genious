@@ -25,9 +25,9 @@
         </header>
 <!-- Header part End here -->
 <!-- main part start Here -->
-<div class=" flex justify-between">
-  <div class="left-item">
-    <div class="item-wrapper grid grid-cols-3 mt-12 gap-4">
+<div class="flex md:flex-col-reverse lg:flex-row sm:flex-col">
+  <div class="left-item ">
+    <div class="item-wrapper grid  md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 gap-4 mt-12">
         <!-- triangle part start here -->
         <div class="item  py-12 px-10 border-2 text-center hover:bg-pink-400 bg-fuchsia-300 transition-all">
             <div class="item-image mx-auto">
@@ -126,11 +126,9 @@
         <!-- ellipse part End here -->
     </div>
   </div>
-
-
-  <div class="right-item mt-12 ml-4 w-1/3 relative">
+  <div class="right-item mt-12 ml-4 md:w-3/4  lg:w-1/3 sm:w-screen relative ">
     <div class="item pt-7   pb-80  border-2 pl-2 ">
-          <p class="font-bold underline-offset-8 mb-2">Area calculation</p>
+          <p class="font-bold underline-offset-8 mb-2 text-center">Area calculation</p>
 
           <h4 class=" mb-4 absolute top-[58px]" id="triangleArea1"></h4> 
         <span id="sq" class="hidden  absolute top-[58px] right-[140px]">cm <sup>2</sup></span>
@@ -163,12 +161,7 @@
   </div>
 </div>
 </div>
-
-
-
 <!-- main part End Here -->
-
-
     <script src="js/script.js"></script>
 </body>
 
